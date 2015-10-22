@@ -1,0 +1,677 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="thanhthientk" />
+    <meta charset="utf-8" />
+	<title>Anadi Home</title>
+
+    <!--[if lt IE 9]>
+		<script src="js/ie/respond.min.js" cache="false">
+		</script>
+		<script src="js/ie/html5.js" cache="false">
+		</script>
+		<script src="js/ie/fix.js" cache="false">
+		</script>
+	<![endif]-->
+
+    <!-- Plugin -->
+    <link type="text/css" href="scss/plugin/plug_mmenu.all.css" rel="stylesheet"/>
+    <link type="text/css" href="scss/plugin/layerslider.css" rel="stylesheet"/>
+    <link type="text/css" href="scss/plugin/owl.carousel.css" rel="stylesheet"/>
+    <link type="text/css" href="scss/plugin/owl.theme.css" rel="stylesheet"/>
+
+    <!-- Bootstrap -->
+    <link type="text/css" href="scss/plugin/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Animation -->
+    <link type="text/css" href="scss/plugin/animate.css" rel="stylesheet"/>
+    
+    <!-- main style -->
+    <link type="text/css" href="scss/main.css" rel="stylesheet"/>
+    
+</head>
+<body>
+
+<!-- Box login -->
+<!-- <div class="modal fade in" id="loginModal" tabindex="-1" role="dialog" style="display: block"> -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">ĐĂNG NHẬP</h4>
+			</div>
+			<div class="modal-body">
+				<div class="right form-login">
+					<form action="">
+						<div class="field-group">
+							<label for="email">Địa chỉ Email</label>
+							<input type="text" id="email" class="form-control" value=" ">
+						</div>
+						<div class="field-group">
+							<label for="password">Mật khẩu</label>
+							<a id="showBoxPassword" >Bạn đã quên mật khẩu?</a>
+							<input type="password" id="password" class="form-control" value=" ">
+						</div>
+						<div class="field-group">
+							<label for="remember">
+								<input type="checkbox" id="remember" style="height: inherit">
+								Nhớ mật khẩu
+							</label>
+						</div>
+						<div class="field-group">
+							<button type="submit" class="btn btn-main">Đăng nhập</button>
+						</div>
+					</form>
+				</div>
+				<div class="left social-login">
+					<p>Đăng nhập tài khoản thông qua</p>
+					<div class="items">
+						<a href="#" class="btn fb">Login with Facebook</a>
+						<a href="#" class="btn gg">Login with Google</a>
+						<a href="#" class="btn tw">Twitter</a>
+					</div>
+				</div><!-- left -->
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="modal-footer text-left">
+				<p class="fz14">Bạn đã chưa có tài khoản? <a href="#" class="main-color">Đăng ký miễn phí.</a></p>
+				<p>Qua việc có tài khoản, bạn đồng ý với các <a href="#" class="main-color">Điều Khoản và Điều Kiện</a> cũng như <a href="#" class="main-color">An toàn và Bảo mật</a> của chúng tôi</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Box lay lai mat khau -->
+<div class="modal fade" id="getPassword" tabindex="-1" role="dialog">
+<!-- <div class="modal fade in" id="getPassword" tabindex="-1" role="dialog" style="display: block"> -->
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="myModalLabel">Lấy lại mật khẩu</h4>
+			</div>
+			<div class="modal-body">
+				<p class="fz14">Hãy nhập địa chỉ email của bạn và chúng tôi sẽ gửi tới bạn đường dẫn để thiết lập lại mật khẩu của bạn</p>
+				<br>
+				<div class="form-login">
+					<form action="">
+						<div class="field-group">
+							<label for="email">Địa chỉ Email</label>
+							<input type="text" id="email" class="form-control" value=" ">
+						</div>
+						<div class="field-group text-right">
+							<button type="submit" class="btn btn-main" style="width: 100px;">Gửi</button>
+						</div>
+					</form>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="modal-footer text-left">
+				<p class="fz14">Tôi đã nhớ ra mật khẩu của mình? <a class="main-color" id="showBoxLogin">Đăng nhập tài khoản</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="page">
+    <header id="header">
+        <div class="top">
+            <div class="container">
+                <div class="row">
+                	<div class="col-sm-4 dropdowns">
+                		<div class="dropdown money">
+							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								VND
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a href="#">USD</a></li>
+								<li><a href="#">USD</a></li>
+								<li><a href="#">USD</a></li>
+							</ul>
+						</div><!-- dropdown money -->
+						<div class="dropdown language">
+							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								<img src="images/flag-vi.jpg" alt="vi">
+								Tiếng việt
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a href="#"><img src="images/flag-vi.jpg" alt="vi"> Tiếng Việt 2</a></li>
+								<li><a href="#"><img src="images/flag-vi.jpg" alt="vi"> Tiếng Việt 3</a></li>
+								<li><a href="#"><img src="images/flag-vi.jpg" alt="vi"> Tiếng Việt 4</a></li>
+							</ul>
+						</div><!-- dropdown money -->
+                	</div><!-- col-sm-4 -->
+                	<div class="col-sm-8 controls">
+                		<a href="#" class="up top-control btn-book">Quản lý đặt phòng</a>
+                		<a href="#" class="up top-control btn-register">TẠO TÀI KHOẢN</a>
+                		<a href="" class="up top-control btn-login" data-toggle="modal" data-target="#loginModal">Đăng nhập</a>
+                	</div>
+                </div><!-- row -->
+            </div><!-- //container -->    
+        </div>
+        <!-- end top -->
+        <div class="main">
+	        <div class="container">
+	            <div class="row">
+	                <div class="logo col-md-4">
+	                	<h1>
+                			<a href="#"><img src="images/logo.png" alt="Anadi"></a>
+	                	</h1>
+	                </div><!-- logo -->
+                	<div class="col-md-8 menu">
+	                    <ul class="left">
+	                    	<li class="active"><a href="#">Khách sạn</a></li>
+	                    	<li><a href="#">Tour du lịch</a></li>
+	                    	<li><a href="#">Xe Buggy</a></li>
+	                    	<li><a href="#">cẩm nang du lịch</a></li>
+	                    </ul>
+                    </div><!-- menu -->
+	            </div><!-- row -->
+	        </div><!-- //container -->
+        </div>
+        <!-- end main -->
+        <button class="navbar-toggle hidden-md" type="button" id="close_open_menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </header>
+    <!-- end header -->
+
+    <!-- Start slider -->
+    <div class="group-slide">
+	    <div id="mainslider" style="width: 100%; height: 450px;">
+	        <div class="ls-slide" data-ls="transition2d:all; slidedelay: 4000;">
+	            <!-- main image slide -->
+	            <img src="images/main-slider-1.jpg" class="ls-bg" alt="Slide background">
+	            <!-- link in slide -->
+	            <a href="http://example.com" class="ls-link"></a>
+	        </div>
+	        <div class="ls-slide" data-ls="transition2d:all; slidedelay: 4000;">
+	            <!-- main image slide -->
+	            <img src="images/main-slider-1.jpg" class="ls-bg" alt="Slide background">
+	            <!-- link in slide -->
+	            <a href="http://example.com" class="ls-link"></a>
+	        </div>
+	    </div>
+	    <div class="controls">
+	    	<span class="prev-mainslider"></span>
+	    	<span class="next-mainslider"></span>
+	    </div>
+    </div>
+    <!-- End slider -->
+
+
+    <!-- Tìm khách sạn Tìm kiếm tour -->
+
+
+    <!-- KHUYẾN MÃI HẤP DẪN -->
+    <!-- block promotion -->
+    <div class="promotion">
+        <div class="container">
+            <div class="row">
+            	<p class="head col-xs-12">
+            		KHUYẾN MÃI <span class="color-main fw900">HẤP DẪN</span>
+            	</p>
+            	<div class="col-md-4 item">
+        			<div class="img">
+        				<a href="#">
+        					<img src="images/km-1.jpg" alt="King's finger HOTEL Nguyen Van Thoai">
+        					<div class="info">
+        						<h2>King's finger HOTEL Nguyen Van Thoai</h2>
+        						<p>
+        							Bãi Biển Mỹ Khê 
+        							&nbsp;&nbsp;
+        							<span class="star"></span>
+        							<span class="star"></span>
+        							<span class="star"></span>
+    							</p>
+        					</div><!-- info -->
+        				</a>
+        			</div><!-- img -->
+        			<div class="detail">
+        				<h2 class="up">
+        					<a href="#" class="main-color">GIẢM 28%, GIÁ 550.000 VNĐ/ĐÊM</a>
+        				</h2>
+        				<p class="fw400 up">GIÁ TỐT THÁNG 09 - TẶNG NGAY 20.000 VNĐ TÍCH LŨY</p>
+        				<p class="rate"><span class="main-color">Rất Tốt 8,0</span> dựa trên <span class="fw700">1.222 đánh giá</span></p>
+        			</div>
+            	</div><!-- col-md-4 item -->
+            	<div class="col-md-4 item">
+        			<div class="img">
+        				<a href="#">
+        					<img src="images/km-2.jpg" alt="King's finger HOTEL Nguyen Van Thoai">
+        					<div class="info">
+        						<h2>King's finger HOTEL Nguyen Van Thoai</h2>
+        						<p>
+        							Bãi Biển Mỹ Khê 
+        							&nbsp;&nbsp;
+        							<span class="star"></span>
+        							<span class="star"></span>
+        							<span class="star"></span>
+    							</p>
+        					</div><!-- info -->
+        				</a>
+        			</div><!-- img -->
+        			<div class="detail">
+        				<h2 class="up">
+        					<a href="#" class="main-color">GIẢM 28%, GIÁ 550.000 VNĐ/ĐÊM</a>
+        				</h2>
+        				<p class="fw400 up">GIÁ TỐT THÁNG 09 - TẶNG NGAY 20.000 VNĐ TÍCH LŨY</p>
+        				<p class="rate"><span class="main-color">Rất Tốt 8,0</span> dựa trên <span class="fw700">1.222 đánh giá</span></p>
+        			</div>
+            	</div><!-- col-md-4 item -->
+            	<div class="col-md-4 item">
+        			<div class="img">
+        				<a href="#">
+        					<img src="images/km-3.jpg" alt="King's finger HOTEL Nguyen Van Thoai">
+        					<div class="info">
+        						<h2>King's finger HOTEL Nguyen Van Thoai</h2>
+        						<p>
+        							Bãi Biển Mỹ Khê 
+        							&nbsp;&nbsp;
+        							<span class="star"></span>
+        							<span class="star"></span>
+        							<span class="star"></span>
+    							</p>
+        					</div><!-- info -->
+        				</a>
+        			</div><!-- img -->
+        			<div class="detail">
+        				<h2 class="up">
+        					<a href="#" class="main-color">GIẢM 28%, GIÁ 550.000 VNĐ/ĐÊM</a>
+        				</h2>
+        				<p class="fw400 up">GIÁ TỐT THÁNG 09 - TẶNG NGAY 20.000 VNĐ TÍCH LŨY</p>
+        				<p class="rate"><span class="main-color">Rất Tốt 8,0</span> dựa trên <span class="fw700">1.222 đánh giá</span></p>
+        			</div>
+            	</div><!-- col-md-4 item -->
+            	<div class="col-xs-12 text-center all-promotion">
+            		<a href="#" class="up">+ Tất cả khuyến mãi của chúng tôi</a>
+            	</div>
+            </div><!-- row -->
+        </div><!-- container -->
+    </div><!-- promotion -->
+    <!-- end block promotion -->
+
+    <!-- Vì sao chọn anandi.vn -->
+    <!-- block why-choose-anadi -->
+    <div class="why-choose-anadi">
+        <div class="container">
+            <div class="row">
+            	<p class="head up col-xs-12">
+            		Vì sao chọn <span class="color-main fw700">anandi.vn</span>
+            	</p>
+            	<div class="col-md-4 item">
+            		<div class="left icon item-1"></div>
+            		<div class="left text">
+            			<h3>Giá rẻ hơn đặt tại khách sạn</h3>
+						<p>Rẻ hơn từ 20% - 30% khi đặt qua anandi.vn</p>
+            		</div>
+            	</div><!-- item -->
+            	<div class="col-md-4 item">
+            		<div class="left icon item-2"></div>
+            		<div class="left text">
+            			<h3>Thanh toán linh hoạt</h3>
+						<p>Thanh toán bằng thẻ ATM hoặc VISA/MASTER</p>
+            		</div>
+            	</div><!-- item -->
+            	<div class="col-md-4 item">
+            		<div class="left icon item-3"></div>
+            		<div class="left text">
+            			<h3>Dễ dàng tìm kiếm</h3>
+						<p>Tìm kiếm linh hoạt, dễ dàng theo nhu cầu của bạn</p>
+            		</div>
+            	</div><!-- item -->
+            	<div class="col-md-4 item">
+            		<div class="left icon item-4"></div>
+            		<div class="left text">
+            			<h3>Đặt phòng nhanh chóng</h3>
+						<p>Thủ tục đặt phòng nhanh, chuyên nghiệp, tiện lợi</p>
+            		</div>
+            	</div><!-- item -->
+            	<div class="col-md-4 item">
+            		<div class="left icon item-5"></div>
+            		<div class="left text">
+            			<h3>Dịch vụ tiện lợi</h3>
+						<p>Sử dụng dịch vụ không cần đăng nhập thành viên</p>
+            		</div>
+            	</div><!-- item -->
+            	<div class="col-md-4 item">
+            		<div class="left icon item-6"></div>
+            		<div class="left text">
+            			<h3>Luôn có ưu đãi đặc biệt</h3>
+						<p>Chương trình khuyến mãi, deal cập nhật thường xuyên</p>
+            		</div>
+            	</div><!-- item -->
+            </div><!-- row -->
+        </div><!-- container -->
+    </div><!-- why-choose-anadi -->
+    <!-- end block why-choose-anadi -->
+
+    <!-- Tour du lịch đà nẵng -->
+    <!-- block tour -->
+    <div class="tour">
+        <div class="container">
+            <div class="row">
+            	<div class="col-sm-6">
+	            	<p class="head up">
+	            		Tour <span class="color-main fw700">du lịch đà nẵng</span>
+	            	</p>
+	            	<div class="tour-items">
+	            		<div class="item">
+	            			<div class="img left">
+	            				<a href="#"><img src="images/tour-1.jpg" alt="Tour Du Lịch Đà Nẵng 3 Ngày 2 Đêm"></a>
+	            			</div>
+	            			<div class="detail">
+	            				<p class="title"><a href="#">Tour Du Lịch Đà Nẵng 3 Ngày 2 Đêm</a></p>
+	            				<div class="left">
+	            					<p>Số ngày: 3 ngày 2 đêm</p>
+									<p>Mã Tour: DLDN_000120</p>
+									<p>Thời gian: Theo yêu cầu</p>
+	            				</div>
+	            				<div class="right">
+	            					<p>Giá 1 khách</p>
+	            					<p class="price">450,000 VND</p>
+	            					<a href="#" class="btn btn-main up">Đặt ngay</a>
+	            				</div>
+	            			</div><!-- detail -->
+	            		</div><!-- item -->
+	            		<div class="item">
+	            			<div class="img left">
+	            				<a href="#"><img src="images/tour-2.jpg" alt="Tour Du Lịch Đà Nẵng 3 Ngày 2 Đêm"></a>
+	            			</div>
+	            			<div class="detail">
+	            				<p class="title"><a href="#">Tour Du Lịch Đà Nẵng 3 Ngày 2 Đêm</a></p>
+	            				<div class="left">
+	            					<p>Số ngày: 3 ngày 2 đêm</p>
+									<p>Mã Tour: DLDN_000120</p>
+									<p>Thời gian: Theo yêu cầu</p>
+	            				</div>
+	            				<div class="right">
+	            					<p>Giá 1 khách</p>
+	            					<p class="price">450,000 VND</p>
+	            					<a href="#" class="btn btn-main up">Đặt ngay</a>
+	            				</div>
+	            			</div><!-- detail -->
+	            		</div><!-- item -->
+	            		<div class="item">
+	            			<div class="img left">
+	            				<a href="#"><img src="images/tour-3.jpg" alt="Tour Du Lịch Đà Nẵng 3 Ngày 2 Đêm"></a>
+	            			</div>
+	            			<div class="detail">
+	            				<p class="title"><a href="#">Tour Du Lịch Đà Nẵng 3 Ngày 2 Đêm</a></p>
+	            				<div class="left">
+	            					<p>Số ngày: 3 ngày 2 đêm</p>
+									<p>Mã Tour: DLDN_000120</p>
+									<p>Thời gian: Theo yêu cầu</p>
+	            				</div>
+	            				<div class="right">
+	            					<p>Giá 1 khách</p>
+	            					<p class="price">450,000 VND</p>
+	            					<a href="#" class="btn btn-main up">Đặt ngay</a>
+	            				</div>
+	            			</div><!-- detail -->
+	            		</div><!-- item -->
+	            		<div class="item">
+	            			<div class="img left">
+	            				<a href="#"><img src="images/tour-4.jpg" alt="Tour Du Lịch Đà Nẵng 3 Ngày 2 Đêm"></a>
+	            			</div>
+	            			<div class="detail">
+	            				<p class="title"><a href="#">Tour Du Lịch Đà Nẵng 3 Ngày 2 Đêm</a></p>
+	            				<div class="left">
+	            					<p>Số ngày: 3 ngày 2 đêm</p>
+									<p>Mã Tour: DLDN_000120</p>
+									<p>Thời gian: Theo yêu cầu</p>
+	            				</div>
+	            				<div class="right">
+	            					<p>Giá 1 khách</p>
+	            					<p class="price">450,000 VND</p>
+	            					<a href="#" class="btn btn-main up">Đặt ngay</a>
+	            				</div>
+	            			</div><!-- detail -->
+	            		</div><!-- item -->
+	            		<div class="item">
+	            			<div class="img left">
+	            				<a href="#"><img src="images/tour-5.jpg" alt="Tour Du Lịch Đà Nẵng 3 Ngày 2 Đêm"></a>
+	            			</div>
+	            			<div class="detail">
+	            				<p class="title"><a href="#">Tour Du Lịch Đà Nẵng 3 Ngày 2 Đêm</a></p>
+	            				<div class="left">
+	            					<p>Số ngày: 3 ngày 2 đêm</p>
+									<p>Mã Tour: DLDN_000120</p>
+									<p>Thời gian: Theo yêu cầu</p>
+	            				</div>
+	            				<div class="right">
+	            					<p>Giá 1 khách</p>
+	            					<p class="price">450,000 VND</p>
+	            					<a href="#" class="btn btn-main up">Đặt ngay</a>
+	            				</div>
+	            			</div><!-- detail -->
+	            		</div><!-- item -->
+	            	</div><!-- tour-items -->
+            	</div><!-- col-xs-6 -->
+            	<div class="col-sm-6">
+            		<div class="tour-slide">
+        				<div class="img-slide left owl-carousel owl-theme" id="tour-slide">
+        					<div class="item">
+        						<img src="images/xe-buggy.jpg" alt="">
+    						</div><!-- item -->
+    						<div class="item">
+        						<img src="images/xe-buggy.jpg" alt="">
+    						</div><!-- item -->
+    						<div class="item">
+        						<img src="images/xe-buggy.jpg" alt="">
+    						</div><!-- item -->
+        				</div><!-- img -->
+        				<div class="detail up left">
+        					<p class="text-center">
+        						<span class="free">Miễn phí</span>
+        					</p>
+        					<p>
+        						<span class="fz20">đi tắm biển bằng</span>
+        						<span class="fz36">Xe Buggy</span>
+        						<span class="fz18">Khi đặt phòng qua Anandi.vn</span>
+        					</p>
+        				</div><!-- detail -->
+            		</div><!-- tour-slide -->
+            		<div class="clearfix"></div>
+            		<p class="head up">
+	            		Khách sạn <span class="color-main fw700">Được quan tâm</span>
+	            	</p>
+            		<div class="clearfix"></div>
+	            	<div class="hotel-items">
+	            		<div class="item">
+	            			<div class="img left">
+	            				<a href="#"><img src="images/khach-san-duoc-quan-tam.jpg" alt="Gopatel Hotel and Spa"></a>
+	            			</div>
+	            			<div class="detail left">
+	            				<h2><a href="#">Gopatel Hotel and Spa</a></h2>
+	            				<p class="place">
+	            					Trung Tâm Đà Nẵng 
+	            					<span class="star"></span>
+	            					<span class="star"></span>
+	            					<span class="star"></span>
+	            					<span class="star"></span>
+	            				</p>
+       							<p class="wish">
+       								<span class="wish-icon"></span> Được yêu thích!  
+       								Có <span class="color-main">29</span> người đang xem khách sạn này
+   								</p>
+   								<p class="rate"><span class="main-color">Rất Tốt 8,0</span> dựa trên <span class="fw700">1.222 đánh giá</span></p>
+	            			</div><!-- detail -->
+	            		</div><!-- item -->
+	            		<div class="item">
+	            			<div class="img left">
+	            				<a href="#"><img src="images/khach-san-duoc-quan-tam.jpg" alt="Gopatel Hotel and Spa"></a>
+	            			</div>
+	            			<div class="detail left">
+	            				<h2><a href="#">Gopatel Hotel and Spa</a></h2>
+	            				<p class="place">
+	            					Trung Tâm Đà Nẵng 
+	            					<span class="star"></span>
+	            					<span class="star"></span>
+	            					<span class="star"></span>
+	            					<span class="star"></span>
+	            				</p>
+       							<p class="wish">
+       								<span class="wish-icon"></span> Được yêu thích!  
+       								Có <span class="color-main">29</span> người đang xem khách sạn này
+   								</p>
+   								<p class="rate"><span class="main-color">Rất Tốt 8,0</span> dựa trên <span class="fw700">1.222 đánh giá</span></p>
+	            			</div><!-- detail -->
+	            		</div><!-- item -->
+	            		<div class="item">
+	            			<div class="img left">
+	            				<a href="#"><img src="images/khach-san-duoc-quan-tam.jpg" alt="Gopatel Hotel and Spa"></a>
+	            			</div>
+	            			<div class="detail left">
+	            				<h2><a href="#">Gopatel Hotel and Spa</a></h2>
+	            				<p class="place">
+	            					Trung Tâm Đà Nẵng 
+	            					<span class="star"></span>
+	            					<span class="star"></span>
+	            					<span class="star"></span>
+	            					<span class="star"></span>
+	            				</p>
+       							<p class="wish">
+       								<span class="wish-icon"></span> Được yêu thích!  
+       								Có <span class="color-main">29</span> người đang xem khách sạn này
+   								</p>
+   								<p class="rate"><span class="main-color">Rất Tốt 8,0</span> dựa trên <span class="fw700">1.222 đánh giá</span></p>
+	            			</div><!-- detail -->
+	            		</div><!-- item -->
+	            	</div><!-- hotel-items -->
+            	</div><!-- col-sm-6 -->
+            </div><!-- row -->
+        </div><!-- container -->
+    </div><!-- tour -->
+    <!-- end block tour -->
+
+	<!-- THÔNG TIN LIÊN HỆ -->
+	<div class="contact-block">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 info">
+					<p class="up">THÔNG TIN LIÊN HỆ</p>
+					<p class="text">
+						<span>Hotline:</span>	84 511 6 271 234  +84 932 582699
+						<br>
+						<span>Địa chỉ:</span>	ACB Building 9th Floor, 218 Bach Dang Street, Hai Chau District, Da Nang
+						<br>
+						<span>Email:</span>	support@anandi.vn - booking@anandi.vn 
+					</p>
+				</div><!-- end col-sm-6 -->
+				<div class="col-sm-6 form">
+					<p>Nhận coupon giảm giá, ưu đãi bí mật, xem trước thông tin khuyến mãi và nhiều quyền lợi khác!</p>
+					<form action="">
+						<input type="text" class="form-control" placeholder="Địa chỉ email của quý vị">
+						<button class="btn btn-main up">Đăng ký</button>
+					</form>
+				</div><!-- end col-sm-6 -->
+			</div><!-- end row -->
+		</div><!-- end container -->
+	</div><!-- contact-block -->
+
+    <footer id="footer">
+    	<div class="menu text-center">
+    		<ul>
+    			<li><a href="#">Về anandi.vn</a></li>
+    			<li><a href="#">Điều khoản thành viên</a></li>
+    			<li><a href="#">Quy chế hoạt động</a></li>
+    			<li><a href="#">Chăm sóc khách hàng</a></li>
+    			<li><a href="#">Đăng ký khách sạn</a></li>
+    			<li><a href="#">Đăng nhập Extranet</a></li>
+    		</ul>    		
+    	</div><!-- footer-menu -->
+    	<div class="main">
+	        <div class="container">
+	            <div class="row">
+	            	<div class="col-xs-12 up plan">
+	            		Lập kế hoạch chuyến đi
+	            		<span class="icon-up"></span>
+	            	</div>
+	            	<div class="col-sm-2">
+	            		Khách sạn tại<br>đà nẵng
+	            	</div>
+	            	<div class="col-sm-10">
+	            		<p>Tham khảo danh sách địa điểm du lịch nổi bật của anandi để lựa chọn khách sạn phù hợp mọi ngân sách. Lựa chọn phòng phù hợp nhu cầu với tính năng xem nhận xét của khách, sử dụng bản đồ và tìm phòng với tỉ lệ giảm giá cao.</p>
+	            		<ul>
+	            			<li><a href="#">Bãi Biển Mỹ Khê <span class="color-main">(146)</span></a></li>
+							<li><a href="#">Sông Hàn <span class="color-main">(81)</span></a></li>
+							<li><a href="#">Bãi biển Bắc Mỹ An <span class="color-main">(48)</span></a></li>
+							<li><a href="#">Trung Tâm Đà Nẵng <span class="color-main">(68)</span></a></li>
+							<li><a href="#">Bãi biển Non Nước <span class="color-main">(10)</span></a></li>
+							<li><a href="#">Dãy núi Bà Nà <span class="color-main">(1)</span></a></li>
+							<li><a href="#">Vịnh Đà Nẵng <span class="color-main">(26)</span></a></li>
+							<li><a href="#">Bán Đảo Sơn Trà <span class="color-main">(2)</span></a></li>
+							<li><a href="#">Ngũ Hành Sơn <span class="color-main">(3)</span></a></li>
+							<li><a href="#">Biển Thọ Quảng <span class="color-main">(4)</span></a></li>
+	            		</ul>
+	            	</div>
+	            	<div class="col-sm-2">
+	            		Open tour
+	            	</div>
+	            	<div class="col-sm-10">
+	            		<p>Bạn đã sẵn sàng cho một chuyến du lịch sau những ngày làm việc căng thẳng, hãy tận hưởng các điểm đến lý tưởng tại  Đà Nẵng cùng Anandi.vn.</p>
+	            		<ul>
+	            			<li><a href="#">Tour Đà Nẵng</a></li>
+	            			<li><a href="#">Tour Bà Nà Hill</a></li>
+	            			<li><a href="#">Tour Hội </a></li>
+	            			<li><a href="#">Tour Cố Đô Huế</a></li>
+	            			<li><a href="#">Tour Cù Lao </a></li>
+	            			<li><a href="#">Tour Thánh Địa Mỹ Sơn</a></li>
+	            			<li><a href="#">Tour Bán Đảo Sơn Trà</a></li>
+	            		</ul>
+	            	</div>
+	            </div><!-- row -->	
+	        </div><!-- container -->
+        </div><!-- main -->
+	    <div class="bottom text-center">
+	    	Securite site seal &nbsp; &nbsp; <img src="images/footer.jpg" alt=""> &nbsp; &nbsp; © 2015-2025 Anandi.vn. Mọi quyền được bảo lưu – Một thương hiệu thuộc FiviGroup
+	    </div><!-- bottom -->
+    </footer>
+    <!-- end footer -->
+
+</div><!-- end page -->
+
+<!-- start menu mobile -->
+<nav id="my-menu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Slideshow</a></li>
+        <li><a href="#">Attraction</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>    
+    <script type="text/javascript" src="js/jquery/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery/jquery.mmenu.min.all.js"></script>
+    <script type="text/javascript" src="js/jquery/greensock.js"></script>
+    <script type="text/javascript" src="js/jquery/layerslider.transitions.js"></script>
+    <script type="text/javascript" src="js/jquery/layerslider.kreaturamedia.jquery.js"></script>
+    <script type="text/javascript" src="js/jquery/owl.carousel.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery/wow.min.js"></script>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        // wow = new WOW(
+        //     {
+        //       mobile:       true
+        //     }
+        // )
+        // wow.init();
+    </script>
+
+</body>
+</html>

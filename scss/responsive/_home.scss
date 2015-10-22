@@ -1,0 +1,175 @@
+@media (min-width: 992px){
+	.container {
+	  width: 960px;
+	}
+}
+@media (max-width: 992px){
+	.signin-now {
+	 	padding-top: 30px;
+	 	padding-bottom: 20px;
+	 	text-align: center;
+	 	h3 {
+		  font-size: 30px;
+		  margin-bottom: 5px;
+		}
+		p{
+			margin-bottom: 10px;
+		}
+		a{
+			height: 40px;
+  			line-height: 40px;
+		}
+	}
+	.benefit {
+	  padding-top: 35px;
+	  .item{
+	  	.icon{
+	  		float: initial;
+	  		margin: auto;
+	  	}
+	  	.text{
+	  		clear: both;
+	  		padding-left: 0;
+	  		text-align: center;
+	  		margin-top: 15px;
+	  	}
+	  }
+	}
+	.distributors {
+		.head-intro{
+			margin-bottom: 25px;
+		}
+		.pd0.col-xs-12{
+			text-align: center;
+			margin-bottom: 20px;
+			img{
+				margin: auto;
+			}
+		}
+	}
+	footer#footer .social a{
+		display: block;margin-bottom: 5px;
+	}
+}
+@media (max-width: 768px){
+	header.fixed{
+		position: fixed;
+		z-index: 99999;
+		left: 0;
+		top: 0;
+		width: 100%;
+		.top-link{
+			padding-left: 28px;
+		}
+		.logo img{
+		  	margin-left: 50px;
+  			margin-top: -42px;
+		}
+		.logo{
+			width: 200px;
+		}
+	}
+	#mainslider{
+		top: 34px;
+	}
+	.signin-now{
+		margin-top: 34px;
+		h3{
+			font-size: 25px;
+		}
+	}
+	footer#footer{
+		padding-bottom: 15px;
+		.social{
+			text-align: center;
+			margin-top: 10px;
+			a{
+				display: inline-block;
+				margin: 10px;
+			}
+		}
+	}
+	.vads{
+		.item{
+			.icon-img{
+				  width: 60px;
+				  height: 60px;
+				  line-height: 60px;
+				img{
+					width: 60%;
+					height: auto;
+				}
+			}
+			.text{
+				margin-top: 30px;
+			}
+			.icon-img:after, .icon-img:before{
+				width: 88px;height: 88px;
+			}
+		}
+		.item:hover{
+			.icon-img:before{
+				width: 88px;height: 88px;
+			}
+		}
+	}
+}
+@media (max-width: 600px){
+	header#header{
+		.nav-control{
+			display: none;
+		}
+		.support{
+			p, ul{
+				display: none;
+			}
+			span{
+				display: block !important;
+				color: #fff;
+  				visibility: visible!important;
+			}
+		}
+	}
+	.signin-now h3{
+		font-size: 21px;
+	}
+	.benefit{
+		.item{
+			margin-bottom: 15px;
+		}
+	}
+	.distributors .feature .item{
+		text-align: center;
+		.icon {
+		  float: initial;
+		  margin: auto;
+		}
+		.text {
+		  clear: both;
+		  padding: 0;
+		}
+	}
+	.vads{
+		.item{
+			width: 100%;
+			clear: both;
+			margin-bottom: 30px;
+			.text{
+				margin-top: 20px;
+				br{
+					display: none;
+				}
+			}
+		}
+	}
+	footer#footer{
+		.link{
+			width: 100%;
+			text-align: center;
+			margin-bottom: 15px;
+			h4{
+				margin-bottom: 5px;
+			}
+		}
+	}
+}

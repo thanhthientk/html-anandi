@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'lato';
+    src: url('../fonts/lato-regular-webfont.eot');
+    src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff'),
+         url('../fonts/lato-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'latob';
+    src: url('../fonts/lato-bold-webfont.eot');
+    src: url('../fonts/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('../fonts/lato-bold-webfont.woff') format('woff'),
+         url('../fonts/lato-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* --- BEGIN CONFIG --- */
+html,body{height: 100%;}
+label {cursor: default;}
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-family: 'lato';
+    font-weight: 400;
+}
+
+body {
+    font-size: 13px;
+    font-weight: 400;
+    color: #666;
+    background-color: #fff;
+    font-family: 'lato';
+}
+a, input, textarea, button, select {
+    outline: medium none;
+}
+h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, h6:focus {
+    text-decoration: none;
+}
+a:focus, input:focus, textarea:focus, button:focus, select:focus {
+    outline: medium none !important;
+    text-decoration: none;
+}
+a:hover{
+    color: #ed1c24;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+ul, ol{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+.pd0{
+    padding: 0;
+}
+.pl0{
+    padding-left: 0;
+}
+.pr0{
+    padding-right: 0;
+}
+.mt0{
+    margin-top: 0;
+}
+.mg0{
+    margin: 0;
+}
+.img{
+    img{
+        max-width: 100%;
+        width: 100%;
+    }
+}
