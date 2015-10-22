@@ -1,0 +1,663 @@
+/* include, _reset, _base, _header */
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/lato-regular-webfont.eot");
+  src: url("../fonts/lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-regular-webfont.woff2") format("woff2"), url("../fonts/lato-regular-webfont.woff") format("woff"), url("../fonts/lato-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'latob';
+  src: url("../fonts/lato-bold-webfont.eot");
+  src: url("../fonts/lato-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-bold-webfont.woff2") format("woff2"), url("../fonts/lato-bold-webfont.woff") format("woff"), url("../fonts/lato-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+/* --- BEGIN CONFIG --- */
+html, body {
+  height: 100%; }
+
+label {
+  cursor: default; }
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: 'lato';
+  font-weight: 400; }
+
+body {
+  font-size: 13px;
+  font-weight: 400;
+  color: #666;
+  background-color: #fff;
+  font-family: 'lato'; }
+
+a, input, textarea, button, select {
+  outline: medium none; }
+
+h1:focus, h2:focus, h3:focus, h4:focus, h5:focus, h6:focus {
+  text-decoration: none; }
+
+a:focus, input:focus, textarea:focus, button:focus, select:focus {
+  outline: medium none !important;
+  text-decoration: none; }
+
+a:hover {
+  color: #ed1c24;
+  text-decoration: none; }
+
+a {
+  text-decoration: none; }
+
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+.pd0 {
+  padding: 0; }
+
+.pl0 {
+  padding-left: 0; }
+
+.pr0 {
+  padding-right: 0; }
+
+.mt0 {
+  margin-top: 0; }
+
+.mg0 {
+  margin: 0; }
+
+.img img {
+  max-width: 100%;
+  width: 100%; }
+
+.icon {
+  background-image: url(../images/icon.png); }
+
+.ia, header#header .top .controls a:after, .group-slide .controls span:before, #loginModal .modal-body .social-login a.btn:before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/icon.png); }
+
+.trs, .btn-main, .btn-main:hover, header#header .top .dropdown .btn-default, header#header .top .dropdown .btn-default:hover, header#header .top .controls a, header#header .top .controls a:hover, header#header .main .menu li a, header#header .main .menu li.active a, header#header .main .menu li a:hover, .group-slide .controls span, .group-slide .controls span:hover, .promotion .item .img img, .promotion .item .img:hover img, .promotion .item .detail h2 a, .promotion .item .detail h2 a:hover, .why-choose-anadi .item .icon, .why-choose-anadi .item:hover .icon, .tour .tour-items .item .img img, .tour .tour-items .item .img:hover img, .tour .tour-items .item .detail p.title a, .tour .tour-items .item .detail p.title a:hover, .tour .hotel-items .item .img:hover img, .tour .hotel-items .item .detail h2 a, .tour .hotel-items .item .detail h2 a:hover, footer#footer .menu li a, footer#footer .menu li a:hover, #loginModal .modal-body .social-login a.btn {
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease; }
+
+/*arrow*/
+/*main color*/
+/*color for text*/
+.navbar-toggle {
+  position: fixed;
+  top: 0px;
+  padding: 0px 10px;
+  z-index: 999;
+  background: 0;
+  border: 0;
+  left: 5px;
+  top: 0px; }
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  margin-bottom: 5px;
+  border-radius: 1px;
+  background: #73572C; }
+
+.fz14 {
+  font-size: 14px; }
+
+.title-main {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.main-color,
+.color-main {
+  color: #009fe2; }
+
+.up {
+  text-transform: uppercase; }
+
+.b {
+  font-family: 'latob'; }
+
+span.star {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/icon.png);
+  background-position: -17px -26px; }
+
+span.wish-icon {
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  background-image: url(../images/icon.png);
+  background-position: -38px -27px; }
+
+span.icon-up {
+  display: inline-block;
+  width: 18px;
+  height: 11px;
+  background-image: url(../images/icon.png);
+  background-position: -64px 0;
+  margin-left: 10px;
+  margin-bottom: 3px; }
+
+.fw700 {
+  font-family: 'latob'; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.btn-main {
+  background: #009fe2;
+  color: #fff;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0; }
+
+.btn-main:hover {
+  background: #092347;
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+
+.fz14 {
+  font-size: 14px; }
+
+.fz18 {
+  font-size: 18px; }
+
+.fz20 {
+  font-size: 20px; }
+
+.fz36 {
+  font-size: 36px; }
+
+.owl-theme .owl-controls {
+  margin-top: -26px; }
+
+.owl-theme .owl-controls .owl-page span {
+  background: #fff;
+  opacity: 0.99; }
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+  background-color: #009fe2;
+  opacity: 0.99; }
+
+header#header {
+  position: relative; }
+  header#header .top {
+    background: #0d2b53; }
+    header#header .top .dropdown {
+      float: left; }
+      header#header .top .dropdown .btn-default {
+        border: 0;
+        background: 0;
+        color: #fff; }
+      header#header .top .dropdown .btn-default:hover {
+        background: #092347; }
+    header#header .top .controls {
+      text-align: right; }
+      header#header .top .controls a {
+        display: inline-block;
+        line-height: 32px;
+        font-size: 12px;
+        position: relative;
+        color: #fff;
+        padding: 0 25px 0 35px;
+        margin-left: -2px; }
+      header#header .top .controls a:after {
+        left: 15px;
+        top: 0;
+        height: 25px;
+        width: 15px;
+        background-position: 0 0; }
+      header#header .top .controls a.btn-book:after {
+        top: 7px; }
+      header#header .top .controls a.btn-register:after {
+        background-position: -38px 0;
+        top: 6px; }
+      header#header .top .controls a.btn-login:after {
+        background-position: -17px 0;
+        top: 9px; }
+      header#header .top .controls a:hover {
+        background: #009fe2; }
+  header#header .main {
+    background: #092347; }
+    header#header .main .logo {
+      padding-top: 10px; }
+      header#header .main .logo img:hover {
+        opacity: .8; }
+    header#header .main .menu li {
+      display: inline-block; }
+      header#header .main .menu li a {
+        display: inline-block;
+        height: 100%;
+        font-size: 13px;
+        font-family: 'latob';
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 68px;
+        padding: 0 38px;
+        margin-right: -3px; }
+    header#header .main .menu li.active a, header#header .main .menu li a:hover {
+      color: #fff701;
+      background: #003e95; }
+
+/*mainslider*/
+.group-slide {
+  position: relative;
+  overflow: hidden; }
+  .group-slide .controls span {
+    display: block;
+    height: 90px;
+    width: 90px;
+    background: rgba(13, 43, 83, 0.7);
+    position: absolute;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    border-radius: 45px;
+    top: 50%;
+    margin-top: -45px;
+    z-index: 999;
+    cursor: pointer; }
+  .group-slide .controls span:hover {
+    background: rgba(0, 159, 226, 0.7); }
+  .group-slide .controls span.next-mainslider {
+    right: -45px; }
+  .group-slide .controls span.prev-mainslider {
+    left: -45px; }
+  .group-slide .controls span:before {
+    z-index: 9999;
+    width: 16px;
+    height: 27px;
+    background-position: 0 -73px;
+    top: 50%;
+    margin-top: -13.5px;
+    left: 32%;
+    margin-left: -8px; }
+  .group-slide .controls span.prev-mainslider:before {
+    background-position: -38px -73px;
+    left: 68%; }
+
+#mainslider .ls-nav-next, #mainslider .ls-nav-prev, #mainslider .ls-bottom-nav-wrapper {
+  display: none !important; }
+
+p.head {
+  font-size: 20px;
+  color: #444;
+  text-transform: uppercase;
+  margin: 30px 0; }
+  p.head span {
+    font-family: 'latob'; }
+
+/*promotion*/
+.promotion {
+  background: #f2f2f2; }
+  .promotion .item .img {
+    position: relative; }
+    .promotion .item .img .info {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: rgba(0, 53, 128, 0.7);
+      color: #fff;
+      padding: 13px 20px; }
+      .promotion .item .img .info h2 {
+        font-size: 14px;
+        font-family: 'latob';
+        margin-bottom: 4px; }
+  .promotion .item .img:hover img {
+    opacity: .75; }
+  .promotion .item .detail {
+    background: #fff;
+    padding: 13px 20px; }
+    .promotion .item .detail h2 {
+      font-size: 18px;
+      font-family: 'latob';
+      margin-bottom: 10px; }
+      .promotion .item .detail h2 a:hover {
+        color: #ffba02; }
+    .promotion .item .detail p.fw400 {
+      color: #666;
+      margin-bottom: 10px; }
+  .promotion .all-promotion {
+    padding: 25px 0; }
+    .promotion .all-promotion a {
+      color: #666; }
+    .promotion .all-promotion a:hover {
+      text-decoration: underline; }
+
+/*why-choose-anadi*/
+.why-choose-anadi p.head {
+  margin-bottom: 40px; }
+.why-choose-anadi .item {
+  margin-bottom: 30px; }
+  .why-choose-anadi .item .icon {
+    width: 69px;
+    height: 69px;
+    background: #009fe2;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    background-image: url(../images/icon.png); }
+  .why-choose-anadi .item .text {
+    width: calc(100% - 69px);
+    padding-left: 30px; }
+    .why-choose-anadi .item .text h3 {
+      font-size: 20px;
+      font-family: 'latob';
+      margin-top: 10px; }
+  .why-choose-anadi .item .icon.item-1 {
+    background-position: -5px -156px; }
+  .why-choose-anadi .item .icon.item-2 {
+    background-position: -5px -220px; }
+  .why-choose-anadi .item .icon.item-3 {
+    background-position: 0px -287px; }
+  .why-choose-anadi .item .icon.item-4 {
+    background-position: -3px -356px; }
+  .why-choose-anadi .item .icon.item-5 {
+    background-position: -7px -427px; }
+  .why-choose-anadi .item .icon.item-6 {
+    background-position: -0px -493px; }
+.why-choose-anadi .item:nth-child(4n+1) {
+  clear: both; }
+.why-choose-anadi .item:hover .icon {
+  background-color: #ffd800; }
+
+/*tour*/
+.tour {
+  padding-bottom: 30px; }
+  .tour .tour-items .item {
+    clear: both;
+    margin-bottom: 30px;
+    float: left;
+    width: 100%; }
+    .tour .tour-items .item .img {
+      width: 190px; }
+    .tour .tour-items .item .img:hover img {
+      opacity: .75; }
+    .tour .tour-items .item .detail {
+      float: left;
+      width: calc(100% - 190px);
+      padding-left: 20px; }
+      .tour .tour-items .item .detail p.title {
+        font-size: 15px;
+        font-family: 'latob';
+        margin-bottom: 20px; }
+        .tour .tour-items .item .detail p.title a {
+          color: #009fe2; }
+        .tour .tour-items .item .detail p.title a:hover {
+          color: #ffba02; }
+      .tour .tour-items .item .detail .left {
+        width: 50%;
+        font-family: 'latob';
+        line-height: 22px;
+        color: #666; }
+      .tour .tour-items .item .detail .right {
+        width: 45%;
+        border-left: 1px solid #ddd;
+        padding-left: 15px; }
+        .tour .tour-items .item .detail .right p.price {
+          font-size: 20px;
+          font-family: 'latob';
+          color: #ffba02; }
+        .tour .tour-items .item .detail .right a.btn {
+          margin-top: 5px;
+          padding: 3px 30px; }
+  .tour .tour-slide {
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+    background: #009fe2; }
+    .tour .tour-slide .img-slide {
+      width: 330px; }
+      .tour .tour-slide .img-slide img {
+        max-width: 100%; }
+    .tour .tour-slide .detail {
+      width: calc(100% - 330px);
+      color: #fff;
+      padding: 0 18px; }
+      .tour .tour-slide .detail p.text-center {
+        margin-top: 60px; }
+        .tour .tour-slide .detail p.text-center span {
+          display: inline-block;
+          font-size: 28px;
+          border: 3px solid #fff;
+          padding: 10px 20px;
+          margin-bottom: 20px; }
+  .tour .hotel-items .item {
+    margin-bottom: 30px;
+    clear: both;
+    float: left;
+    width: 100%; }
+    .tour .hotel-items .item .img {
+      width: 130px; }
+    .tour .hotel-items .item .img:hover img {
+      opacity: .75; }
+    .tour .hotel-items .item .detail {
+      width: calc(100% - 130px);
+      padding-left: 20px; }
+      .tour .hotel-items .item .detail h2 {
+        font-size: 15px;
+        font-family: 'latob';
+        margin-bottom: 10px; }
+        .tour .hotel-items .item .detail h2 a {
+          color: #009fe2; }
+        .tour .hotel-items .item .detail h2 a:hover {
+          color: #ffba02; }
+      .tour .hotel-items .item .detail p.place {
+        color: #444;
+        margin-bottom: 3px; }
+      .tour .hotel-items .item .detail p.wish {
+        margin-bottom: 10px; }
+        .tour .hotel-items .item .detail p.wish span.wish-icon {
+          position: relative;
+          top: 1px;
+          margin-right: 3px; }
+
+/*contact-block*/
+.contact-block {
+  background: url(../images/footer-bg.jpg) center;
+  color: #fff;
+  padding: 25px 35px; }
+  .contact-block .info p.up {
+    font-size: 20px;
+    margin-bottom: 25px; }
+  .contact-block .info p.text {
+    font-size: 14px;
+    line-height: 22px; }
+  .contact-block .form p {
+    font-size: 14px;
+    margin-bottom: 20px; }
+  .contact-block .form form input {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    width: calc(100% - 165px);
+    float: left;
+    border: 0; }
+  .contact-block .form form button {
+    width: 150px;
+    float: right; }
+
+/*footer#footer*/
+footer#footer .menu {
+  background: #003580; }
+  footer#footer .menu li {
+    display: inline-block; }
+    footer#footer .menu li a {
+      display: inline-block;
+      line-height: 47px;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 0 25px; }
+    footer#footer .menu li a:hover {
+      color: #fff701; }
+footer#footer .main {
+  background: #f2f2f2; }
+  footer#footer .main .plan {
+    font-size: 20px;
+    color: #009fe2;
+    text-transform: uppercase;
+    margin: 30px 0 40px; }
+  footer#footer .main .col-sm-2 {
+    font-size: 16px;
+    font-family: 'latob';
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+  footer#footer .main .col-sm-10 {
+    margin-bottom: 40px; }
+    footer#footer .main .col-sm-10 p {
+      font-size: 14px;
+      margin-bottom: 15px;
+      line-height: 22px; }
+    footer#footer .main .col-sm-10 ul li {
+      display: inline-block;
+      margin-right: 20px; }
+      footer#footer .main .col-sm-10 ul li a {
+        font-size: 14px;
+        font-family: 'latob';
+        color: #666; }
+      footer#footer .main .col-sm-10 ul li a:hover {
+        text-decoration: underline; }
+footer#footer .bottom {
+  padding: 18px 0 20px; }
+
+/*login box*/
+body {
+  padding-right: 0 !important; }
+
+.modal .modal-content {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0; }
+.modal .modal-header {
+  padding: 10px 30px;
+  background: #003580;
+  border: 0; }
+  .modal .modal-header h4 {
+    font-family: 'latob';
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase; }
+.modal button.close {
+  color: #fff;
+  font-weight: 400;
+  opacity: 1; }
+.modal .modal-footer {
+  background: #f2f2f2;
+  text-align: left;
+  border-top: 0;
+  padding-left: 30px;
+  padding-right: 30px; }
+.modal .form-login form .field-group {
+  margin-bottom: 10px; }
+  .modal .form-login form .field-group label {
+    font-weight: normal;
+    font-size: 14px;
+    margin-bottom: 7px;
+    cursor: pointer; }
+  .modal .form-login form .field-group input {
+    padding: 10px 15px;
+    height: 38px; }
+  .modal .form-login form .field-group button {
+    font-family: 'latob';
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    background: #0083c8;
+    padding: 8px 22px; }
+.modal .modal-body {
+  float: left;
+  width: 100%;
+  padding: 35px 30px; }
+.modal a {
+  cursor: pointer; }
+
+#loginModal .modal-body {
+  background: url(../images/login-box-bg.png) center no-repeat; }
+  #loginModal .modal-body .social-login {
+    width: 50%; }
+    #loginModal .modal-body .social-login p {
+      font-size: 14px;
+      padding-top: 10px;
+      margin-bottom: 25px; }
+    #loginModal .modal-body .social-login a.btn {
+      display: block;
+      width: 80%;
+      font-size: 14px;
+      color: #fff;
+      margin-bottom: 20px;
+      text-align: left;
+      padding-left: 55px;
+      position: relative;
+      padding: 11.5px 10px 11.5px 55px; }
+    #loginModal .modal-body .social-login a:hover {
+      opacity: .8; }
+    #loginModal .modal-body .social-login a.btn:before {
+      width: 27px;
+      height: 27px;
+      top: 8px;
+      left: 14px; }
+    #loginModal .modal-body .social-login a.fb {
+      background: #314faf; }
+    #loginModal .modal-body .social-login a.gg {
+      background: #e84c3d; }
+    #loginModal .modal-body .social-login a.tw {
+      background: #0083c8; }
+    #loginModal .modal-body .social-login a.fb:before {
+      background-position: -69px -22px; }
+    #loginModal .modal-body .social-login a.gg:before {
+      background-position: -70px -54px; }
+    #loginModal .modal-body .social-login a.tw:before {
+      background-position: -69px -86px; }
+#loginModal .form-login {
+  width: 50%; }
+  #loginModal .form-login form {
+    width: 80%;
+    float: right; }
+
+#getPassword .modal-body {
+  padding: 20px 35px 10px; }
+
+@media (min-width: 768px) {
+  #loginModal .modal-dialog {
+    width: 655px; }
+
+  #getPassword .modal-dialog {
+    width: 480px; } }
+
+/*# sourceMappingURL=main.css.map */
